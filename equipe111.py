@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-#from suiteSn import suiteSn
+from suiteSn import suiteSn
 
+#1
 a = np.full((6, 1), 1)
 b = np.arange(1, 7)
 c = a.reshape(1, 6)
@@ -56,6 +57,17 @@ def fonction(x):
 plt.figure(2)
 plt.plot(x,fonction(x))
 plt.title("Figure 2 \n Fonction f(x)", fontsize = 20, color = 'brown')
+plt.show()
+
+#2
+n = 19
+x = np.arange(0, n + 1)
+plt.figure(3)
+plt.plot(x, suiteSn(n))
+plt.xlabel("n")
+plt.ylabel("Sn")
+plt.xticks(np.arange(0, 20, 2))
+plt.title("Figure 3: Sn en fonction de n")
 plt.show()
 
 #3
