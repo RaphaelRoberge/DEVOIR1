@@ -59,3 +59,17 @@ plt.title("Figure 2 \n Fonction f(x)", fontsize = 20, color = 'brown')
 plt.show()
 
 #3
+deriveefonction = 2.0
+h = 10.0**(-np.arange(1, 13))
+D = (fonction(h) - fonction(0))/h
+print(D)
+erreur = np.abs(deriveefonction - D)
+print(erreur)
+plt.figure(4)
+plt.loglog(h, erreur, marker="o")
+plt.xlabel("h")
+plt.ylabel("Erreur")
+plt.title("Erreur en fonction de h", fontsize = 20, color = "blue")
+plt.show()
+
+
