@@ -1,5 +1,4 @@
 import numpy as np
-from math import e
 
 def suiteSn(n):
     S = np.array([np.e-1])
@@ -8,3 +7,9 @@ def suiteSn(n):
         Si = np.e - i * S[i-1]
         S = np.append(S, Si)
     return S
+
+test18 = suiteSn(18)
+print(test18)
+
+test19 = suiteSn(19)
+print(test19)

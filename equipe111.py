@@ -58,3 +58,4 @@ plt.plot(x,fonction(x))
 plt.title("Figure 2 \n Fonction f(x)", fontsize = 20, color = 'brown')
 plt.show()
 
+#3
