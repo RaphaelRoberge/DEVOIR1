@@ -13,5 +13,3 @@ print(test18)
 
 test19 = suiteSn(19)
 print(test19)
-
-#testsara
