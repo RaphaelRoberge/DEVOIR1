@@ -47,16 +47,16 @@ plt.title("Figure 1 \n Matrice N", fontsize = 20, color = 'magenta')
 plt.figure(1)
 plt.show()
 
-#f = ((-x**2)/2) + (np.e)**x + np.sin(x)
-
 x = np.linspace(0, 1, 101)
 
 def fonction(x):
-    f = ((-x**2)/2) + (np.e)**x + np.sin(x)
+    f = ((-x**2)/2) + (np.exp(x)) + np.sin(x)
     return f
 plt.figure(2)
 plt.plot(x,fonction(x))
-plt.title("Figure 2 \n Fonction f(x)", fontsize = 20, color = 'brown')
+plt.xlabel("x", fontsize = 15, color = 'black')
+plt.ylabel("f(x)", fontsize = 15, color = 'black')
+plt.title("Figure 2 \n Fonction f(x) sur l'intervalle [0,1]", fontsize = 20, color = 'brown')
 plt.show()
 
 #2
@@ -64,8 +64,8 @@ n = 19
 x = np.arange(0, n + 1)
 plt.figure(3)
 plt.plot(x, suiteSn(n))
-plt.xlabel("n")
-plt.ylabel("Sn")
+plt.xlabel("n", fontsize = 15, color = 'black')
+plt.ylabel("Sn", fontsize = 15, color = 'black')
 plt.xticks(np.arange(0, 20, 2))
 plt.title("Figure 3: Sn en fonction de n")
 plt.show()
@@ -79,9 +79,9 @@ erreur = np.abs(deriveefonction - D)
 #print(erreur)
 plt.figure(4)
 plt.loglog(h, erreur, marker="o")
-plt.xlabel("h")
-plt.ylabel("Erreur")
-plt.title("Erreur en fonction de h", fontsize = 20, color = "blue")
+plt.xlabel("h", fontsize = 15, color = "black")
+plt.ylabel("Erreur", fontsize = 15, color = "black")
+plt.title("Erreur en fonction de h (échelle loglog)", fontsize = 20, color = "blue")
 plt.show()
 
 
