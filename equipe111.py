@@ -37,7 +37,7 @@ plt.show()
 x = np.linspace(0, 1, 101)
 
 def fonction(x):
-    f = ((-x**2)/2) + (np.exp(x)) + np.sin(x)
+    f = ((-x**2)/2) + (np.exp(x)) + (np.sin(x))
     return f
 plt.figure(2)
 plt.plot(x,fonction(x))
@@ -58,7 +58,7 @@ plt.ylabel("Sn", fontsize = 20, color = 'black')
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
 plt.xticks(np.arange(0, 20, 2))
-plt.title("Figure 3: Sn en fonction de n")
+plt.title("Figure 3 \n Sn en fonction de n")
 plt.show()
 
 #3
