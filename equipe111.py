@@ -29,7 +29,8 @@ print('dd = ', dd, sep = '\n', end = '\n\n')
 print('x = ', x, sep = '\n', end = '\n\n')
 print('N = ', N, sep = '\n', end = '\n\n')
 
-plt.matshow(N, cmap='Greens')
+plt.matshow(N, cmap='RdYlBu')
+plt.colorbar()
 plt.title("Figure 1 \n Matrice N", fontsize = 20, color = 'magenta')
 plt.figure(1)
 plt.show()
@@ -76,5 +77,3 @@ plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
 plt.title("Erreur en fonction de h (échelle loglog)", fontsize = 20, color = "blue")
 plt.show()
-
-
