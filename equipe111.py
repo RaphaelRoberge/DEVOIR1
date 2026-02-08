@@ -68,7 +68,9 @@ plt.show()
 # 3
 deriveefonction = 2.0
 h = 10.0**(-np.arange(1, 13))
-D = (fonction(h) - fonction(0)) / h
+P = (fonction(h) - fonction(0))
+#print(P)
+#D = (fonction(h) - fonction(0)) / h
 # print(D)
 erreur = np.abs(deriveefonction - D)
 # print(erreur)
