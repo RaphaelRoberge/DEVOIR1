@@ -37,11 +37,9 @@ plt.show()
 
 x = np.linspace(0, 1, 101)
 
-
 def fonction(x):
     f = ((-x**2) / 2) + (np.exp(x)) + (np.sin(x))
     return f
-
 
 plt.figure(2)
 plt.plot(x, fonction(x))
@@ -68,17 +66,13 @@ plt.show()
 # 3
 deriveefonction = 2.0
 h = 10.0**(-np.arange(1, 13))
-P = (fonction(h) - fonction(0))
-#print(P)
-#D = (fonction(h) - fonction(0)) / h
-# print(D)
+D = (fonction(h) - fonction(0)) / h
 erreur = np.abs(deriveefonction - D)
-# print(erreur)
 plt.figure(4)
 plt.loglog(h, erreur, marker="o")
 plt.xlabel("h", fontsize=20, color="black")
 plt.ylabel("Erreur", fontsize=20, color="black")
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
-plt.title("Erreur en fonction de h (échelle loglog)", fontsize=20, color="blue")
+plt.title("Figure 4 \n Erreur en fonction de h (échelle loglog)", fontsize=20, color="blue")
 plt.show()
